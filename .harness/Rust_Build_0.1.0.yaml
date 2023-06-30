@@ -6,6 +6,8 @@ template:
   spec:
     type: Run
     spec:
+      connectorRef: account.Harness_Docker_Connector
+      image: rust:latest
       shell: Sh
       command: cargo build
   identifier: Rust_Build

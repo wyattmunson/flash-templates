@@ -13,7 +13,7 @@ template:
       shell: Bash
       command: |-
         #!/bin/bash
-        jest 
+        jest --ci --runInBand --reporters=default --reporters=jest-junit
       envVariables:
         JEST_JUNIT_OUTPUT_DIR: /harness/reports
     description: Run Jest unit tests.
